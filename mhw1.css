@@ -1,0 +1,190 @@
+.barretta{
+    margin-top: 2px;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /*
+    Di default il body avrà un po' di margine
+    */
+    margin: 0;
+     /*
+    Per fare grassetto
+    */
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.box{
+    margin-right: 40px;
+    background-color: white;
+}
+
+
+.boxr{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 60px;
+    background-color: white;
+    color: white;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element{
+    background-color: white;
+    width: 66.67%;
+    font-weight: lighter;
+}
+
+.element h2{
+    margin-bottom: 20px;
+}
+
+.element p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 75px;
+    text-align: center;
+}
+
+.giudizio{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+img{
+    width: 100%;
+}
+
+.interno{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.link{
+    /*
+    Serve a levare la sottolineatura
+     che i link hanno di default
+     */
+    text-decoration: none;
+    padding: 15px 15px;
+    color: black;
+    border-radius: 5px;
+}
+
+.link:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.overlay{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.titolo{
+    height: 500px;
+     /*
+    Se non si carica immagine, ci sarà colore di sfondo che permette di leggere il testo
+    */
+    background-color: grey;
+    color: whitesmoke;
+    background-image: url(https://i.pinimg.com/originals/27/37/92/27379238a5b876d31ff189d9b1822d45.jpg);
+    /*
+    Resize the background image to cover the entire container, 
+    even if it has to stretch the image or cut a little bit off one of the edges
+    */
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.titolo h1{
+    width: 780px;
+    text-align: center;
+}
+
+.profilo{
+    text-align: center;
+}
+
+#propic{
+    display: block;
+    color: gray;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto; 
+    border: solid white;
+}
+
+.sezione{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    background-color: white;
+}
+
+.topnav{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    /*
+    Rendo il blocco di tipo flex
+    */
+    display: flex;
+    /*
+    Distribuisce equamente il contenuto nello spazio disponibile
+    */
+    justify-content: space-around;
+    /*
+    Posiziona gli item al centro verticalmente(Se non ci fosse, sarebbero attaccati in alto)
+    */
+    align-items: center;
+    height : 75px;
+}
+
+.topnavm{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: none;
+}
+
+@media (max-width: 500px){
+    .topnav{
+        display: none;
+    }
+    .topnavm{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
